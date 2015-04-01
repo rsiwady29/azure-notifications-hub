@@ -171,7 +171,7 @@ var app = {
 
                         // Register for notifications.
                         // (gcmRegId, ["tag1","tag2"], templateName, templateBody)
-                        hub.gcm.register(e.regid, ["richard:id"], "myTemplate", template).done(function () {
+                        hub.gcm.register(e.regid, null, "myTemplate", template).done(function () {
                             alert("Registered with hub!");
                         }).fail(function (error) {
                             console.log(error);
